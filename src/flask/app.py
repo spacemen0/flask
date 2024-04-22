@@ -245,6 +245,7 @@ class Flask(App):
         #: object. The commands are available from the ``flask`` command
         #: once the application has been discovered and blueprints have
         #: been registered.
+        print("Hello world")
         self.cli = cli.AppGroup()
 
         # Set the name of the Click group in case someone wants to add
@@ -826,7 +827,7 @@ class Flask(App):
 
     def log_exception(
         self,
-        exc_info: (tuple[type, BaseException, TracebackType] | tuple[None, None, None]),
+        exc_info: tuple[type, BaseException, TracebackType] | tuple[None, None, None],
     ) -> None:
         """Logs an exception.  This is called by :meth:`handle_exception`
         if debugging is disabled and right before the handler is called.
