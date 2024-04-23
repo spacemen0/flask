@@ -384,8 +384,10 @@ def _prepare_send_file_kwargs(**kwargs: t.Any) -> dict[str, t.Any]:
     )
     return kwargs
 
+
 def hello_word():
-    return "Hello World"
+    return "Hello World Flask"
+
 
 def send_file(
     path_or_file: os.PathLike[t.AnyStr] | str | t.BinaryIO,
