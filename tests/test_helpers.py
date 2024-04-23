@@ -33,7 +33,6 @@ class PyBytesIO:
 class TestSendfile:
     def test_send_file(self, app, req_ctx):
         rv = flask.send_file("static/index.html")
-        print("Hello world")
         assert rv.direct_passthrough
         assert rv.test_response
         assert rv.mimetype == "text/html"

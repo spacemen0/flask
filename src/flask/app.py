@@ -245,7 +245,7 @@ class Flask(App):
         #: object. The commands are available from the ``flask`` command
         #: once the application has been discovered and blueprints have
         #: been registered.
-        print("Hello world")
+        # print("Hello world")
         self.cli = cli.AppGroup()
 
         # Set the name of the Click group in case someone wants to add
